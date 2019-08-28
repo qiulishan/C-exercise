@@ -74,7 +74,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="circle.cpp" />
+    <ClCompile Include="circle_for_dot.cpp" />
+    <ClCompile Include="class_execisee.cpp" />
+    <ClCompile Include="day2_quote.cpp" />
+    <ClCompile Include="dynamic_array.cpp" />
     <ClCompile Include="hello.cpp" />
+    <ClCompile Include="myteacher.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="all.h" />
+    <ClInclude Include="circle_for_dot.h" />
+    <ClInclude Include="dynamic_array.h" />
+    <ClInclude Include="myteacher.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
