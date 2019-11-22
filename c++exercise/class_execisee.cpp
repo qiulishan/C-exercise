@@ -69,6 +69,20 @@ void obj_play(circles p)
 	cout<<"p's obj_play function"<<endl;
 }
 
+int factorial(int n)
+{
+	int res = 1;
+	if(n == 0)
+	{
+		return 1;
+	}
+	while(n>=1)
+	{
+		res *= n;
+		n--;
+	}
+	return res;
+}
 void main()
 {
 	//mycircle circle1;
@@ -186,10 +200,9 @@ void main()
 	//++c3;
 	//c3.complex_print();
 
-	int num[400][400];
-	int len[400][400];
-
-	int m,n;
+	//int num[40][400];
+	//int len[40][400];
+	//int m,n;
 	//scanf("%d",&m);
 	//for(int i=1;i<=m;i++)
 	//{
@@ -202,10 +215,42 @@ void main()
 	//		else len[i][j]=0;
 	//	}
 	//}
+	//char a[] = "nimade";
+	//char *b = "nimade";
+	//printf("strlen a is %d\n",strlen(a));
+	//printf("sizeof a is %d\n",sizeof(a));
+	//printf("strlen b is %d\n",strlen(b));
 
-
-
-
+	printf("%d\n",factorial(5));
+	int i = 0;
+	int j = 0;
+	int k = 0;
+	int n = 4;
+	int comb_matrix[120][5];
+	for(i = 0;i < factorial(n);i++)
+	{
+		for(j = 0;j < n+1;j++)
+		comb_matrix[i][j] = 1;
+	}
+	for(i = 2;i <= n;i++)
+	{
+		for(j = 1;j <= factorial(i-1);j++)
+		{
+			for(k = i;k >= 1;k--)
+			{
+				printf("i%d	",i,j,k);
+				comb_matrix[j][k] = i;
+			}
+		}
+	}
+	//for(i = 0;i < factorial(n);i++)
+	//{
+	//	for(int j = 0;j < n;j++)
+	//	{
+	//		printf("%d ",comb_matrix[i][j]);
+	//	}
+	//	printf("\n");
+	//}
 
 
 

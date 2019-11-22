@@ -40,6 +40,14 @@ private:
 	int b;
 protected:
 };
+//class inherit_class:private dynamic_array
+//class inherit_class:protected dynamic_array
+
+class inherit_class:public dynamic_array
+{
+public:
+	int a;
+};
 
 
 

@@ -4,8 +4,6 @@
 dynamic_array::dynamic_array(void)
 {
 }
-
-
 dynamic_array::~dynamic_array(void)
 {
 	if(this->p_array == NULL)
@@ -199,6 +197,8 @@ complex complex::operator++ ()
 	this->b++;
 	return *this;
 }
+
+
 
 
 
